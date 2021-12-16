@@ -2,8 +2,8 @@
   tasks:
     - name: Install http server
       package:
-      name: "{{webserver}}" 
+        name: "{{webserver}}" 
  
     - name: Install git
       package:
-      name: git
+        name: git
