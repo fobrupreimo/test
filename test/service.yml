@@ -1,13 +1,5 @@
-- name: restart apache2 service
+- name: restart http service
   service:
-    name: apache2
+    name: {{webserver}}
     state: started
     enabled: yes
-  when: ansible_os_family == "Debian"
-  
-- name: restart httpd service
-  service:
-    name: httpd
-    state: started
-    enabled: yes
-  when: ansible_os_family == "RedHat"
