@@ -4,3 +4,8 @@
     git:
       repo: "{{repo}}"
       dest: /var/www/html/"{{git_dest}}"
+    register: result
+  
+  - name: log deploiement site web
+    debug:
+      var: result
