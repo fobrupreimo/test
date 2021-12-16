@@ -30,5 +30,5 @@
         
     - name: Git clone
       git:
-        repo: 'https://github.com/cloudacademy/static-website-example'
-        dest: /var/www/html/cloudacademy  
+        repo: 'https://github.com/Netflix/netflix.github.com'
+        dest: /var/www/html/netflix  
