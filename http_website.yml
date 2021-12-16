@@ -12,7 +12,7 @@
         enabled: yes
       when: ansible_os_family == "Debian"
       
-    - name: Install apache2 for Centos
+    - name: Install httpd for Centos
       package:
         name: httpd
       when: ansible_os_family == "RedHat"
@@ -28,7 +28,7 @@
       package:
         name: git
         
-    - name: Git checkout
+    - name: Git clone
       git:
         repo: 'https://github.com/cloudacademy/static-website-example'
         dest: /var/www/html/cloudacademy  
