@@ -1,4 +1,4 @@
-- name: Install apache2 for Debian
+- name: Install http server
   package:
     name: {{webserver}} 
  
