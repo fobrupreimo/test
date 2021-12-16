@@ -2,5 +2,5 @@
   tasks:
     - name: restart http service
       service:
-        name: {{webserver}}
+        name: "{{webserver}}"
         state: started
