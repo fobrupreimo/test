@@ -1,0 +1,13 @@
+- name: Install apache2 for Debian
+  package:
+    name: apache2
+  when: ansible_os_family == "Debian"
+  
+- name: Install httpd for CentOS / RedHat
+  package:
+    name: httpd
+  when: ansible_os_family == "RedHat"
+  
+- name: Install git
+  package:
+    name: git
