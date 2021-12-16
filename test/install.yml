@@ -1,7 +1,9 @@
-- name: Install http server
-  package:
-    name: {{webserver}} 
+- hosts: all
+  tasks:
+    - name: Install http server
+      package:
+      name: {{webserver}} 
  
-- name: Install git
-  package:
-    name: git
+    - name: Install git
+      package:
+      name: git
