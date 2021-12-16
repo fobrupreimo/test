@@ -2,5 +2,5 @@
 - tasks:
   - name: Déploiement site web
     git:
-      repo: {{repo}}
-      dest: /var/www/html/{{git_dest}}
+      repo: "{{repo}}"
+      dest: /var/www/html/"{{git_dest}}"
