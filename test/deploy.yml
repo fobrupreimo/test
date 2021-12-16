@@ -1,5 +1,5 @@
 - hosts: all
-- tasks:
+  tasks:
   - name: Déploiement site web
     git:
       repo: "{{repo}}"
