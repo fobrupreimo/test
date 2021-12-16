@@ -2,5 +2,5 @@
 - tasks:
   - name: Déploiement site web
     git:
-      repo: https://github.com/cloudacademy/static-website-example.git
-      dest: /var/www/html/website2
+      repo: {{repo}}
+      dest: /var/www/html/{{git_dest}}
