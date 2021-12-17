@@ -1,12 +1,16 @@
 - hosts: all
   tasks:
+  - name: Suppresion de /var/www/html/website
+    file:
+      state: absent 
+      path: /var/www/html/website 
+      
   - name: Déploiement site web
     git:
       repo: "{{repo}}"
-      dest: /var/www/html/"{{git_dest}}"
-    
+      dest: /var/www/html/website  
+  
   - name: log deploiement site web
     debug:
       msg:
         - "source git : {{repo}}"
-        - "dossier dest : /var/www/html/{{git_dest}}"
